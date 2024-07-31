@@ -1,0 +1,18 @@
+<p><b>list component inside dashboard component.</b> Dataflow: contact-> dashboard-> list</p>
+<p><b> Service flow : </b> contact-> list</p>
+
+@if(contactListsfromDashboard.length > 0){
+<ul>
+    <li *ngFor="let contact of contactListsfromDashboard">{{contact}}</li>
+</ul>
+}@else {
+<p>No contact lists available</p>
+}
+
+<!-- @if(contactListsfromService.length > 0){
+    <ul>
+        <li *ngFor="let contact of contactListsfromService">{{contact}}</li>
+    </ul>
+    }@else {
+    <p>No contact lists available</p>
+} -->
